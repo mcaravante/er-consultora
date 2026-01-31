@@ -6,53 +6,61 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 220 30% 15%;
+    /* Paleta de colores WCAG AA - Accesible */
+    /* #1F3A5F = hsl(217, 51%, 25%) - Azul institucional (headers, títulos, texto principal) */
+    /* #6E78B7 = hsl(232, 34%, 58%) - Lavanda accesible (botones primarios, íconos, detalles) */
+    /* #F2F4F6 = hsl(210, 19%, 96%) - Fondo claro accesible */
+    /* #3F3F3F = hsl(0, 0%, 25%) - Texto secundario accesible */
+    /* #FFFFFF = hsl(0, 0%, 100%) - Blanco (solo sobre azul o lavanda) */
+
+    --background: 210 19% 96%;
+    --foreground: 217 51% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 30% 15%;
+    --card-foreground: 217 51% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 30% 15%;
+    --popover-foreground: 217 51% 25%;
 
-    --primary: 220 60% 25%;
+    --primary: 217 51% 25%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 80% 55%;
-    --secondary-foreground: 220 30% 15%;
+    --secondary: 210 19% 96%;
+    --secondary-foreground: 217 51% 25%;
 
-    --muted: 210 20% 94%;
-    --muted-foreground: 220 15% 45%;
+    --muted: 210 19% 96%;
+    --muted-foreground: 0 0% 25%;
 
-    --accent: 45 85% 50%;
-    --accent-foreground: 220 30% 15%;
+    --accent: 232 34% 58%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 20% 88%;
-    --input: 220 20% 88%;
-    --ring: 220 60% 25%;
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 217 51% 25%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --navy: 220 60% 20%;
-    --navy-light: 220 50% 30%;
-    --gold: 45 85% 50%;
-    --gold-light: 45 90% 65%;
-    --cream: 45 30% 96%;
+    --navy: 217 51% 25%;
+    --navy-light: 217 45% 35%;
+    --lavanda: 232 34% 58%;
+    --lavanda-light: 232 40% 65%;
+    --cream: 210 19% 96%;
+    --text-secondary: 0 0% 25%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(220 60% 20%) 0%, hsl(220 50% 30%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(45 85% 50%) 0%, hsl(45 90% 60%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 20% 98%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(217 51% 25%) 0%, hsl(217 45% 35%) 100%);
+    --gradient-lavanda: linear-gradient(135deg, hsl(232 34% 58%) 0%, hsl(232 40% 65%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 19% 96%) 100%);
 
     /* Shadows */
-    --shadow-sm: 0 2px 8px -2px hsl(220 60% 20% / 0.08);
-    --shadow-md: 0 8px 24px -8px hsl(220 60% 20% / 0.12);
-    --shadow-lg: 0 16px 48px -12px hsl(220 60% 20% / 0.18);
-    --shadow-gold: 0 8px 24px -8px hsl(45 85% 50% / 0.3);
+    --shadow-sm: 0 2px 8px -2px hsl(217 51% 25% / 0.08);
+    --shadow-md: 0 8px 24px -8px hsl(217 51% 25% / 0.12);
+    --shadow-lg: 0 16px 48px -12px hsl(217 51% 25% / 0.18);
+    --shadow-lavanda: 0 8px 24px -8px hsl(232 34% 58% / 0.3);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -122,7 +130,7 @@
 @layer utilities {
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: var(--gradient-gold);
+    background-image: var(--gradient-lavanda);
   }
 
   .bg-hero {
@@ -137,8 +145,8 @@
     box-shadow: var(--shadow-lg);
   }
 
-  .shadow-gold {
-    box-shadow: var(--shadow-gold);
+  .shadow-lavanda {
+    box-shadow: var(--shadow-lavanda);
   }
 }
 

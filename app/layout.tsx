@@ -19,8 +19,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "ContadoresAR - Soluciones Contables Profesionales",
-  description: "Optimizamos tu gestión fiscal y contable en Argentina. Asesoramiento personalizado para PyMEs, monotributistas y empresas.",
+  title: "Especialistas en Liquidación de Sueldos y Gestión Laboral | Argentina",
+  description: "Servicio profesional de liquidación de sueldos para todos los convenios colectivos. Gestión laboral integral, payroll y cumplimiento normativo para empresas en Argentina. Partner Bejerman - Thomson Reuters.",
 };
 
 export default function RootLayout({

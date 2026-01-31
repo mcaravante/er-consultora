@@ -60,11 +60,12 @@ export default {
           DEFAULT: "hsl(var(--navy))",
           light: "hsl(var(--navy-light))",
         },
-        gold: {
-          DEFAULT: "hsl(var(--gold))",
-          light: "hsl(var(--gold-light))",
+        lavanda: {
+          DEFAULT: "hsl(var(--lavanda))",
+          light: "hsl(var(--lavanda-light))",
         },
         cream: "hsl(var(--cream))",
+        "text-secondary": "hsl(var(--text-secondary))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

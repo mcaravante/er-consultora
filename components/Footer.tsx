@@ -13,11 +13,11 @@ const Footer = () => {
               </div>
               <div>
                 <span className="font-display font-semibold text-xl text-primary-foreground">Contadores</span>
-                <span className="text-gold font-display font-semibold text-xl">AR</span>
+                <span className="text-foreground font-display font-semibold text-xl">AR</span>
               </div>
             </a>
             <p className="text-primary-foreground/70 max-w-md leading-relaxed">
-              Estudio contable en Argentina dedicado a brindar soluciones integrales en contabilidad, impuestos y asesoramiento empresarial.
+              Especialistas en liquidación de sueldos y gestión laboral integral para empresas en Argentina. Partner Bejerman - Thomson Reuters. Servicio profesional, preciso y alineado a normativa vigente.
             </p>
           </div>
 
@@ -47,10 +47,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-primary-foreground mb-4">Servicios</h4>
             <ul className="space-y-3">
-              <li className="text-primary-foreground/70">Contabilidad</li>
-              <li className="text-primary-foreground/70">Impuestos</li>
-              <li className="text-primary-foreground/70">Monotributo</li>
-              <li className="text-primary-foreground/70">Auditoría</li>
+              <li className="text-primary-foreground/70">Liquidación de Sueldos</li>
+              <li className="text-primary-foreground/70">Gestión Laboral</li>
+              <li className="text-primary-foreground/70">Formulario 931</li>
+              <li className="text-primary-foreground/70">Ganancias 4ta Categoría</li>
             </ul>
           </div>
         </div>

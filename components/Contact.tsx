@@ -58,18 +58,18 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contacto" className="py-24 bg-background">
+    <section id="contacto-formulario" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-gold/10 text-gold font-medium text-sm mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-lavanda/10 text-lavanda font-medium text-sm mb-4">
             Contacto
           </span>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            ¿Listo para Optimizar tus Finanzas?
+            ¿Listo para Externalizar tu Payroll?
           </h2>
           <p className="text-muted-foreground text-lg">
-            Agenda una consulta gratuita y descubrí cómo podemos ayudarte a ordenar tu situación fiscal.
+            Solicita una consulta y conoce cómo podemos ayudarte con la liquidación de sueldos y gestión laboral de tu empresa.
           </p>
         </div>
 
@@ -78,7 +78,7 @@ const Contact = () => {
           <div className="lg:col-span-3">
             <div className="bg-card rounded-2xl p-8 shadow-card border border-border">
               <h3 className="font-display text-2xl font-semibold text-foreground mb-6">
-                Envianos tu Consulta
+                Envíanos tu Consulta
               </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -139,11 +139,11 @@ const Contact = () => {
                     required
                     rows={4}
                     className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-all resize-none"
-                    placeholder="Contanos sobre tu situación o consulta..."
+                    placeholder="Contanos sobre tu empresa, cantidad de empleados y convenio colectivo aplicable..."
                   />
                 </div>
-                <Button type="submit" size="xl" className="w-full">
-                  Enviar Consulta
+                <Button type="submit" variant="hero" size="xl" className="w-full">
+                  Solicitar Asesoramiento
                 </Button>
               </form>
             </div>
@@ -156,8 +156,8 @@ const Contact = () => {
                 key={item.title}
                 className="flex gap-4 p-6 rounded-2xl bg-muted/50 border border-border"
               >
-                <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center flex-shrink-0">
-                  <item.icon className="w-6 h-6 text-primary-foreground" />
+                <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center flex-shrink-0">
+                  <item.icon className="w-6 h-6 text-lavanda" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">{item.title}</p>
