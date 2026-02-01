@@ -14,7 +14,7 @@ const Header = () => {
 
   const serviceOptions = [
     { href: "/servicios/bejerman-erp", label: "Bejerman ERP" },
-    { href: "/servicios/bejerman-rrhh", label: "Bejerman Sueldos" },
+    { href: "/servicios/bejerman-sueldos", label: "Bejerman Sueldos" },
     { href: "/servicios/bejerman-web", label: "Bejerman Web" },
     { href: "/servicios/onvio", label: "Thomson Reuters ONVIO" },
   ];

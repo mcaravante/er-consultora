@@ -9,6 +9,10 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-hero" />
+      <div
+        className="absolute inset-0 bg-center bg-cover"
+        style={{ backgroundImage: "url('/assets/hero-bg.png')" }}
+      />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-navy-light/30 via-transparent to-transparent" />
       
       {/* Decorative Elements */}
@@ -20,7 +24,7 @@ const Hero = () => {
           {/* Content */}
           <div className="text-center">
             <div 
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 mb-6 animate-fade-up"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 mb-6 motion-safe:animate-fade-up"
               style={{ animationDelay: "0.1s" }}
             >
               <Shield className="w-4 h-4 text-lavanda" />
@@ -28,7 +32,7 @@ const Hero = () => {
             </div>
             
             <h1 
-              className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up opacity-0"
+              className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 motion-safe:animate-fade-up motion-safe:opacity-0"
               style={{ animationDelay: "0.2s" }}
             >
               Especialistas en{" "}
@@ -37,21 +41,21 @@ const Hero = () => {
             </h1>
             
             <p 
-              className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-3xl mx-auto animate-fade-up opacity-0"
+              className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-3xl mx-auto motion-safe:animate-fade-up motion-safe:opacity-0"
               style={{ animationDelay: "0.3s" }}
             >
               Liquidación de sueldos para todos los convenios colectivos. Servicio profesional, preciso y alineado a normativa vigente. Orientado a PyMEs y empresas que buscan externalizar payroll con confianza.
             </p>
 
             <div 
-              className="flex flex-col items-center gap-6 animate-fade-up opacity-0"
+              className="flex flex-col items-center gap-6 motion-safe:animate-fade-up motion-safe:opacity-0"
               style={{ animationDelay: "0.4s" }}
             >
               <div className="flex flex-col items-center justify-center gap-3">
                 <span className="text-primary-foreground/80 text-lg font-semibold tracking-wide">
                   Agente Autorizado
                 </span>
-                <div className="bg-white/95 backdrop-blur-sm px-6 py-3 rounded-2xl shadow-sm border border-white/40">
+                <div className="bg-white/95 backdrop-blur-sm px-6 py-3 rounded-2xl shadow-sm border border-white/40 transition-shadow duration-300 hover:shadow-md">
                   <Image
                     src="/assets/tr_hrz_logo_rgb_color.png"
                     alt="Thomson Reuters - Partner Bejerman"

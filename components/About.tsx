@@ -1,6 +1,7 @@
 const About = () => {
   return (
-    <section id="nosotros" className="py-24 bg-muted/30">
+    <section id="nosotros" className="py-24 bg-muted/30 relative overflow-hidden">
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -21,7 +22,7 @@ const About = () => {
               cambios normativos.
             </p>
           </div>
-          <div className="bg-card rounded-3xl p-8 border border-border shadow-card">
+          <div className="bg-card rounded-3xl p-8 border border-border shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 hover:border-lavanda/30 hover:ring-1 hover:ring-lavanda/20">
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
                 <p className="text-2xl font-bold text-foreground mb-2">10+</p>

@@ -25,7 +25,8 @@ const features = [
 
 const WhyUs = () => {
   return (
-    <section id="compromiso" className="py-24 bg-muted/50">
+    <section id="compromiso" className="py-24 bg-muted/50 relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-96 h-96 bg-lavanda/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
@@ -43,7 +44,7 @@ const WhyUs = () => {
             <div className="grid sm:grid-cols-2 gap-6">
               {features.map((feature) => (
                 <div key={feature.title} className="flex gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center flex-shrink-0 shadow-sm transition-shadow duration-300 hover:shadow-md">
                     <feature.icon className="w-6 h-6 text-lavanda" />
                   </div>
                   <div>
@@ -60,19 +61,19 @@ const WhyUs = () => {
             <div className="absolute -inset-4 bg-gradient-to-r from-lavanda/20 to-primary/20 rounded-3xl blur-2xl" />
             <div className="relative bg-card rounded-3xl p-8 md:p-12 shadow-lg border border-border">
               <div className="grid grid-cols-2 gap-8">
-                <div className="text-center p-6 rounded-2xl bg-muted/50">
+                <div className="text-center p-6 rounded-2xl bg-muted/50 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1">
                   <p className="font-display text-4xl md:text-5xl font-bold text-primary mb-2">500+</p>
                   <p className="text-muted-foreground font-medium">Empresas Activas</p>
                 </div>
-                <div className="text-center p-6 rounded-2xl bg-muted/50">
+                <div className="text-center p-6 rounded-2xl bg-muted/50 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1">
                   <p className="font-display text-4xl md:text-5xl font-bold text-lavanda mb-2">10+</p>
                   <p className="text-muted-foreground font-medium">Años de Experiencia</p>
                 </div>
-                <div className="text-center p-6 rounded-2xl bg-muted/50">
+                <div className="text-center p-6 rounded-2xl bg-muted/50 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1">
                   <p className="font-display text-4xl md:text-5xl font-bold text-primary mb-2">98%</p>
                   <p className="text-muted-foreground font-medium">Clientes Satisfechos</p>
                 </div>
-                <div className="text-center p-6 rounded-2xl bg-muted/50">
+                <div className="text-center p-6 rounded-2xl bg-muted/50 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1">
                   <p className="font-display text-4xl md:text-5xl font-bold text-lavanda mb-2">24h</p>
                   <p className="text-muted-foreground font-medium">Tiempo de Respuesta</p>
                 </div>

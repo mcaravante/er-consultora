@@ -32,7 +32,7 @@ const Features = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Header Section */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16 motion-safe:animate-fade-up">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Simplificá tu gestión salarial con un equipo experto
           </h2>
@@ -46,14 +46,11 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="group relative bg-card rounded-2xl p-8 border border-border shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
+              className="group relative bg-card rounded-2xl p-8 border border-border shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 hover:border-lavanda/30 hover:ring-1 hover:ring-lavanda/20 cursor-pointer"
             >
-              {/* Decorative corner accent */}
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-lavanda/10 to-transparent rounded-bl-3xl rounded-tr-2xl" />
-              
               <div className="relative">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center flex-shrink-0 shadow-sm transition-shadow duration-300 group-hover:shadow-md">
                     <feature.icon className="w-7 h-7 text-lavanda" />
                   </div>
                   <div className="flex-1">

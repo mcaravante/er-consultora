@@ -5,7 +5,6 @@ import About from "@/components/About";
 import Features from "@/components/Features";
 import Partners from "@/components/Partners";
 import WhyUs from "@/components/WhyUs";
-import ContactIntro from "@/components/ContactIntro";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -19,7 +18,6 @@ export default function Home() {
       <Partners />
       <Features />
       <WhyUs />
-      <ContactIntro />
       <Contact />
       <Footer />
     </div>

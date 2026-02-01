@@ -2,9 +2,10 @@ import { Button } from "@/components/ui/button";
 
 const ContactIntro = () => {
   return (
-    <section id="contacto" className="py-20 bg-background">
+    <section id="contacto" className="py-20 bg-background relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-96 h-96 bg-lavanda/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center motion-safe:animate-fade-up">
           <span className="inline-block px-4 py-1.5 rounded-full bg-lavanda/10 text-lavanda font-medium text-sm mb-4">
             Contacto
           </span>

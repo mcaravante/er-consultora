@@ -35,10 +35,11 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="servicios" className="py-24 bg-background">
+    <section id="servicios" className="py-24 bg-background relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-96 h-96 bg-lavanda/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-16 motion-safe:animate-fade-up">
           <span className="inline-block px-4 py-1.5 rounded-full bg-lavanda/10 text-lavanda font-medium text-sm mb-4">
             Servicios Especializados
           </span>
@@ -55,16 +56,17 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group p-8 rounded-2xl bg-card border border-border shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
+              className="group relative p-8 rounded-2xl bg-card/90 border border-border shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 hover:border-lavanda/30 hover:ring-1 hover:ring-lavanda/20 cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center mb-6 transition-colors">
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-lavanda/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="relative w-14 h-14 rounded-xl bg-white flex items-center justify-center mb-6 transition-shadow duration-300 group-hover:shadow-sm">
                 <service.icon className="w-7 h-7 text-lavanda" />
               </div>
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+              <h3 className="relative font-display text-xl font-semibold text-foreground mb-3 group-hover:text-lavanda transition-colors">
                 {service.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="relative text-muted-foreground leading-relaxed">
                 {service.description}
               </p>
             </div>

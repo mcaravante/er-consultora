@@ -58,7 +58,8 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contacto-formulario" className="py-24 bg-background">
+    <section id="contacto-formulario" className="py-24 bg-background relative overflow-hidden">
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-y-1/2 translate-x-1/2" />
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -76,7 +77,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-5 gap-12">
           {/* Contact Form */}
           <div className="lg:col-span-3">
-            <div className="bg-card rounded-2xl p-8 shadow-card border border-border">
+            <div className="bg-card rounded-2xl p-8 shadow-card border border-border hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 hover:border-lavanda/30 hover:ring-1 hover:ring-lavanda/20">
               <h3 className="font-display text-2xl font-semibold text-foreground mb-6">
                 Envíanos tu Consulta
               </h3>
@@ -154,7 +155,7 @@ const Contact = () => {
             {contactInfo.map((item) => (
               <div
                 key={item.title}
-                className="flex gap-4 p-6 rounded-2xl bg-muted/50 border border-border"
+                className="flex gap-4 p-6 rounded-2xl bg-muted/50 border border-border transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 hover:border-lavanda/30 hover:ring-1 hover:ring-lavanda/20"
               >
                 <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center flex-shrink-0">
                   <item.icon className="w-6 h-6 text-lavanda" />

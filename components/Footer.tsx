@@ -1,12 +1,14 @@
+import Image from "next/image";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-hero py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12 items-start">
           {/* Logo & Description */}
-          <div className="md:col-span-2">
+          <div>
             <a href="#" className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center">
                 <span className="text-primary-foreground font-display font-bold text-xl">C</span>
@@ -21,9 +23,22 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-semibold text-primary-foreground mb-4">Enlaces</h4>
+          {/* Center Logo */}
+          <div className="flex flex-col items-center justify-start gap-2">
+            <span className="text-primary-foreground/70 text-sm font-medium tracking-wide">
+              Agente Autorizado
+            </span>
+            <Image
+              src="/assets/tr_pri_logo_rgb_white.png"
+              alt="Thomson Reuters"
+              width={420}
+              height={90}
+              className="h-20 w-auto"
+            />
+          </div>
+
+          {/* Links + Services */}
+          <div className="grid grid-cols-2 gap-6">
             <ul className="space-y-3">
               <li>
                 <a href="#servicios" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
@@ -41,16 +56,27 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h4 className="font-semibold text-primary-foreground mb-4">Servicios</h4>
             <ul className="space-y-3">
-              <li className="text-primary-foreground/70">Liquidación de Sueldos</li>
-              <li className="text-primary-foreground/70">Gestión Laboral</li>
-              <li className="text-primary-foreground/70">Formulario 931</li>
-              <li className="text-primary-foreground/70">Ganancias 4ta Categoría</li>
+              <li>
+                <a href="/servicios/bejerman-erp" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                  Bejerman ERP
+                </a>
+              </li>
+              <li>
+                <a href="/servicios/bejerman-sueldos" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                  Bejerman Sueldos
+                </a>
+              </li>
+              <li>
+                <a href="/servicios/bejerman-web" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                  Bejerman Web
+                </a>
+              </li>
+              <li>
+                <a href="/servicios/onvio" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                  Thomson Reuters ONVIO
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -69,6 +95,16 @@ const Footer = () => {
                 Términos y Condiciones
               </a>
             </div>
+          </div>
+          <div className="mt-4 text-center">
+            <a
+              href="https://www.lixar.com.ar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-foreground/60 hover:text-primary-foreground text-xs transition-colors"
+            >
+              Desarrollado por Lixar
+            </a>
           </div>
         </div>
       </div>
