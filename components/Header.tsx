@@ -8,8 +8,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#nosotros", label: "Nosotros" },
-    { href: "#contacto", label: "Contacto" },
+    { href: "/#nosotros", label: "Nosotros" },
+    { href: "/#contacto", label: "Contacto" },
   ];
 
   const serviceOptions = [
@@ -70,7 +70,7 @@ const Header = () => {
               <span className="text-sm font-medium">+54 9 11 1234-5678</span>
             </a>
             <Button variant="hero" size="lg" asChild>
-              <a href="#contacto">Solicitar Asesoramiento</a>
+              <a href="/#contacto">Solicitar Asesoramiento</a>
             </Button>
           </div>
 
@@ -116,7 +116,7 @@ const Header = () => {
                 </a>
               ))}
               <Button variant="hero" className="mt-2" asChild>
-                <a href="#contacto">Solicitar Asesoramiento</a>
+                <a href="/#contacto">Solicitar Asesoramiento</a>
               </Button>
             </nav>
           </div>
