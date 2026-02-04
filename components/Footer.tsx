@@ -41,17 +41,17 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-6">
             <ul className="space-y-3">
               <li>
-                <a href="#servicios" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                <a href="/#servicios" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                   Servicios
                 </a>
               </li>
               <li>
-                <a href="#nosotros" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                <a href="/#nosotros" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                   Nosotros
                 </a>
               </li>
               <li>
-                <a href="#contacto" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                <a href="/#contacto-formulario" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                   Contacto
                 </a>
               </li>
